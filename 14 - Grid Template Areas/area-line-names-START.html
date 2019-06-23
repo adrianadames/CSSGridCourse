@@ -41,11 +41,22 @@
     <div class="item item29">29</div>
     <div class="item item30">30</div>
   </div>
-
+  <!-- 💩-start / 🍔-end; -->
   <style>
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas:
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔 "
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔";
+    }
+
+    .item3 {
+      /* grid-area:💩; */
+      grid-column:💩-start /🍔-end;
+      grid-row-end: 💩-end
     }
   </style>
 </body>
