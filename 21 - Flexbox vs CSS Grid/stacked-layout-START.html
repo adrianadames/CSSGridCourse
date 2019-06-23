@@ -19,7 +19,12 @@
   </div>
 
   <style>
-    .stacked {}
+    /* Only flexbox can do what is done here (without having to go in and add manual margins with grid). */
+    .stacked {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-around;
+    }
 
     .stacked>* {
       width: 30%;
