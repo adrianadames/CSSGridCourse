@@ -97,6 +97,34 @@
 
 
   <style>
+    .albums {
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+      /* grid-template-rows: repeat(auto-fill);
+      place-items:center center;
+      grid-auto-flow:dense;
+      justify-content:space-between; */
+      grid-gap:20px
+    }
+
+    .album{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+      background:white;
+      padding:10px;
+      align-items:center;
+      grid-gap:10px;
+      font-weight:100
+    }
+
+    .album__details{
+      justify-content:start;
+      /* border-color:5px solid green !important; */
+    }
+    .album__artwork{
+      width:100%;
+    }
+
   </style>
 </body>
 
